@@ -1,7 +1,6 @@
 name: sample_pubspec
 description: A sample application
 dependencies:
+  bot: '>=0.14.1'
   args: any
-  bot:
-    git: https://github.com/kevmoo/bot.dart.git
   logging: any
