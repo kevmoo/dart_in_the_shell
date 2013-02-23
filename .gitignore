@@ -1,0 +1,3 @@
+packages
+*.log
+pubspec.lock
