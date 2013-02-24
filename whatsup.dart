@@ -10,13 +10,9 @@ void main() {
   enableScriptLogListener();
   _log.info('app starting');
 
-  final options = new Options();
-
-  final args = options.arguments;
-
   final parser = _getParser();
 
-  final results = parser.parse(args);
+  final results = tryArgsCompletion(parser);
 
   if(results.command != null && results.command.name == 'help') {
     _log.info('help requested');
