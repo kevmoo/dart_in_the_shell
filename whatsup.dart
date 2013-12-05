@@ -2,17 +2,18 @@
 
 import 'package:args/args.dart';
 import 'package:logging/logging.dart';
-import 'package:bot/bot_io.dart';
+import 'package:bot_io/completion.dart';
+import 'package:bot_io/bot_io.dart';
 
 final _log = new Logger('whats_up');
 
-void main() {
+void main(List<String> args) {
   enableScriptLogListener();
   _log.info('app starting');
 
   final parser = _getParser();
 
-  final results = tryArgsCompletion(parser);
+  final results = tryArgsCompletion(args, parser);
 
   if(results.command != null && results.command.name == 'help') {
     _log.info('help requested');

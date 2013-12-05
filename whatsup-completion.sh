@@ -1,16 +1,16 @@
-# 
+#
 # Installation:
-# 
+#
 # Via shell config file  ~/.bashrc  (or ~/.zshrc)
-# 
+#
 #   Append the contents to config file
 #   'source' the file in the config file
-# 
+#
 # You may also have a directory on your system that is configured
 #    for completion files, such as:
-# 
+#
 #    /usr/local/etc/bash_completion.d/
-# 
+#
 
 ###-begin-whatsup.dart-completion-###
 
@@ -57,6 +57,6 @@ fi
 
 ###-end-whatsup.dart-completion-###
 
-## Generated 2013-02-24 00:25:52.270Z
-## By /Users/kevin/source/github/bot.dart/bin/shell-completion-generator
+## Generated 2013-12-05 17:43:02.158Z
+## By /Users/kevin/source/github/bot_io.dart/bin/shell-completion-generator
 
