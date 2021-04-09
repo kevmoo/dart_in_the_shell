@@ -99,5 +99,6 @@ Future<void> main(List<String> arguments) async {
 - pkg:stack_trace
 - version info: pkg:build_version
 - testing:
+  - test on many OSes
   - pkg:test_descriptor
   - pkg:test_process
