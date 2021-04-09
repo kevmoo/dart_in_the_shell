@@ -98,7 +98,37 @@ Future<void> main(List<String> arguments) async {
 
 - pkg:stack_trace
 - version info: pkg:build_version
+
+---
+
+# TODO arg parsing
+
+- pkg:args
+- pkg:build_cli
+- pkg:completion
+
+---
+
+# TODO configuration
+
+- pkg:json_serializable
+- pkg:yaml
+- pkg:checked_yaml
+
+---
+
+# TODO testing
+
 - testing:
   - test on many OSes
   - pkg:test_descriptor
   - pkg:test_process
+
+---
+
+# TODO: networking
+
+- close your HTTP clients in finally block
+- Set your user-agent header!
+  - include version info
+  - help with debugging issues in the wild
