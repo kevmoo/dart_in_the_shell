@@ -155,3 +155,8 @@ Future<void> main(List<String> arguments) async {
 # TODO: auth
 
 - storing credentials, redirecting the user, etc etc
+
+examples in Dart
+
+- pub client
+- googleapis_auth package
