@@ -144,3 +144,10 @@ Future<void> main(List<String> arguments) async {
 # TODO: make things pretty!
 
 - pkg:io for ansi
+
+---
+
+# TODO: distribution
+
+- pub global activate
+- AOT pre-compile? Hrm...
