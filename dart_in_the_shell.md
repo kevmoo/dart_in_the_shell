@@ -151,3 +151,7 @@ Future<void> main(List<String> arguments) async {
 
 - pub global activate
 - AOT pre-compile? Hrm...
+
+# TODO: auth
+
+- storing credentials, redirecting the user, etc etc
