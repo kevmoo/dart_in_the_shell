@@ -133,6 +133,14 @@ Future<void> main(List<String> arguments) async {
   - include version info
   - help with debugging issues in the wild
 
+---
+
+# TODO: conventions
+
+- write cached files to `.dart_tool/[pkg_name]`
+
+---
+
 # TODO: make things pretty!
 
 - pkg:io for ansi
