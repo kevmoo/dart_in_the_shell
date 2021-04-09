@@ -119,10 +119,10 @@ Future<void> main(List<String> arguments) async {
 
 # TODO testing
 
-- testing:
-  - test on many OSes
-  - pkg:test_descriptor
-  - pkg:test_process
+- test on many OSes
+- pkg:test_descriptor
+- pkg:test_process
+- test your README!
 
 ---
 
