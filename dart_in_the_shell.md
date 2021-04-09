@@ -132,3 +132,7 @@ Future<void> main(List<String> arguments) async {
 - Set your user-agent header!
   - include version info
   - help with debugging issues in the wild
+
+# TODO: make things pretty!
+
+- pkg:io for ansi
