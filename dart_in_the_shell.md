@@ -49,7 +49,7 @@ Future<void> main(List<String> arguments) async {
 
 ---
 
-# Only set `exitcode` in `by/my_app.dart`.
+# Only set `exitcode` in `bin/my_app.dart`.
 
 I'd argue package code should NEVER touch `exitCode`.
 
