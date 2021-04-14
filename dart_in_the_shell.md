@@ -14,18 +14,16 @@ Keeping track of CLI app best practices in one spot
 
 # Use the exitCode setter
 
-Calling `exit(...)` terminates your application immediately.
+<!-- footer: kevmoo@ -->
 
-Not possible to debug your app or use observatory with "pause on exit".
+- Calling `exit(...)` terminates your application immediately.
+- Not possible to debug your app or use observatory with "pause on exit".
 
 ```dart
 import 'dart:io';
-
 void main() {
-    // DO!
-    exitCode = 64;
-    // Avoid!
-    exit(64);
+    exitCode = 64; // DO!
+    exit(64);      // Avoid!
 }
 ```
 
@@ -45,16 +43,15 @@ Future<void> main(List<String> arguments) async {
 
 # Only set `exitcode` in `bin/my_app.dart`.
 
-I'd argue package code should NEVER touch `exitCode`.
-
-It makes tracking down which code is setting the exit code super hard.
-
-Do it only in one place.
+- Code in `lib/` should NEVER touch `exitCode`.
+- Makes tracking down which code is setting the exit code super hard.
+- Do it only in one place.
 
 # Non-zero exit code on failure
 
-A non-zero exit code means the process failed. If your app crashes with an
-unhandled exception, a non-zero exit code is set automatically.
+- A non-zero exit code means the process failed.
+- If your app crashes with an unhandled exception, a non-zero exit code is set
+  automatically.
 
 # Example: Non-zero exit code
 
@@ -79,6 +76,8 @@ Future<void> main(List<String> arguments) async {
 
 - https://www.freebsd.org/cgi/man.cgi?query=sysexits
 - https://pub.dev/documentation/io/latest/io/ExitCode-class.html
+- Be a good \*nix citizen
+- Examples: `64` - bad usage, `78` - bad configuration
 
 # TODO items
 
