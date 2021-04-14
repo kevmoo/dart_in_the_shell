@@ -5,14 +5,12 @@ class:
   - invert
 size: 16:9
 paginate: true
-#backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+headingDivider: 1
 ---
 
 # kevmoo Dart CLI Guide
 
 Keeping track of CLI app best practices in one spot
-
----
 
 # Use the exitCode setter
 
@@ -31,8 +29,6 @@ void main() {
 }
 ```
 
----
-
 # Keep the contents of `bin/my_app.dart` tiny
 
 This makes unit testing much easier.
@@ -47,8 +43,6 @@ Future<void> main(List<String> arguments) async {
 }
 ```
 
----
-
 # Only set `exitcode` in `bin/my_app.dart`.
 
 I'd argue package code should NEVER touch `exitCode`.
@@ -57,14 +51,10 @@ It makes tracking down which code is setting the exit code super hard.
 
 Do it only in one place.
 
----
-
 # Non-zero exit code on failure
 
 A non-zero exit code means the process failed. If your app crashes with an
 unhandled exception, a non-zero exit code is set automatically.
-
----
 
 # Example: Non-zero exit code
 
@@ -85,21 +75,15 @@ Future<void> main(List<String> arguments) async {
 }
 ```
 
----
-
 # Descriptive exit code if you can
 
 - https://www.freebsd.org/cgi/man.cgi?query=sysexits
 - https://pub.dev/documentation/io/latest/io/ExitCode-class.html
 
----
-
 # TODO items
 
 - pkg:stack_trace
 - version info: pkg:build_version
-
----
 
 # TODO arg parsing
 
@@ -107,15 +91,11 @@ Future<void> main(List<String> arguments) async {
 - pkg:build_cli
 - pkg:completion
 
----
-
 # TODO configuration
 
 - pkg:json_serializable
 - pkg:yaml
 - pkg:checked_yaml
-
----
 
 # TODO testing
 
@@ -124,8 +104,6 @@ Future<void> main(List<String> arguments) async {
 - pkg:test_process
 - test your README!
 
----
-
 # TODO: networking
 
 - close your HTTP clients in finally block
@@ -133,19 +111,13 @@ Future<void> main(List<String> arguments) async {
   - include version info
   - help with debugging issues in the wild
 
----
-
 # TODO: conventions
 
 - write cached files to `.dart_tool/[pkg_name]`
 
----
-
 # TODO: make things pretty!
 
 - pkg:io for ansi
-
----
 
 # TODO: distribution
 
