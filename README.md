@@ -79,9 +79,11 @@ Future<void> main(List<String> arguments) async {
 - Be a good \*nix citizen
 - Examples: `64` - bad usage, `78` - bad configuration
 
-# TODO items
+# TODO helpful stack traces
 
 - pkg:stack_trace
+
+# TODO version info
 - version info: pkg:build_version
 
 # TODO arg parsing
