@@ -12,6 +12,22 @@ headingDivider: 1
 
 Keeping track of CLI app best practices in one spot
 
+# `#!` for directly executable scripts
+
+...on Linux & Mac
+
+```dart
+#!/usr/bin/env dart
+
+void main() => print('Cool!');
+```
+
+Don't forget to make it executable!
+
+```console
+$ chmod +x bin/my_script.dart
+```
+
 # Use the exitCode setter
 
 <!-- footer: kevmoo@ -->
@@ -84,6 +100,7 @@ Future<void> main(List<String> arguments) async {
 - pkg:stack_trace
 
 # TODO version info
+
 - version info: pkg:build_version
 
 # TODO arg parsing
